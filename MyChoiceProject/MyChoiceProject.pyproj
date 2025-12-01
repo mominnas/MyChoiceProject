@@ -32,9 +32,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\admin.py" />
+    <Compile Include="app\api_views.py" />
     <Compile Include="app\forms.py" />
+    <Compile Include="app\management\commands\deploy_frontend.py" />
+    <Compile Include="app\management\commands\__init__.py" />
+    <Compile Include="app\management\__init__.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="app\serializers.py" />
     <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
@@ -46,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\management\" />
+    <Folder Include="app\management\commands\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
@@ -54,9 +63,28 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="frontend\" />
+    <Folder Include="frontend\build\" />
+    <Folder Include="frontend\build\static\" />
+    <Folder Include="frontend\build\static\css\" />
+    <Folder Include="frontend\build\static\js\" />
+    <Folder Include="frontend\public\" />
+    <Folder Include="frontend\src\" />
     <Folder Include="MyChoiceProject\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frontend\.env" />
+    <Content Include="frontend\build\index.html" />
+    <Content Include="frontend\build\static\css\main.css" />
+    <Content Include="frontend\build\static\js\main.js" />
+    <Content Include="frontend\deploy_instructions.md" />
+    <Content Include="frontend\package.json" />
+    <Content Include="frontend\public\index.html" />
+    <Content Include="frontend\README.md" />
+    <Content Include="frontend\src\App.css" />
+    <Content Include="frontend\src\App.js" />
+    <Content Include="frontend\src\index.js" />
+    <Content Include="frontend\src\ItemList.js" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
