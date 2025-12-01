@@ -43,3 +43,13 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+
+def react_index(request):
+    """Serve the built React app's index.html from frontend/build/index.html.
+
+    Note: make sure you run `npm run build` in the `frontend` directory so the
+    `frontend/build` folder exists.
+    """
+    # Render the React build's index.html (TEMPLATES DIRS includes frontend/build)
+    return render(request, 'index.html')
