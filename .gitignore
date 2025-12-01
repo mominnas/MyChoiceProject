@@ -361,3 +361,41 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Python
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+pip-wheel-metadata/
+build/
+
+# Django / DB / static output
+db.sqlite3
+/static/
+
+# Node / React
+/frontend/node_modules/
+npm-debug.log*
+yarn-error.log*
+/frontend/.env
+
+# Ignore react build? Uncomment one of the two lines below:
+# If you DO NOT commit the build:
+# /frontend/build/
+# If you commit the build, keep it tracked and DO NOT include the line above.
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.coverage
+htmlcov/
+coverage/
+/MyChoiceProject/static
+/MyChoiceProject/db.sqlite3
