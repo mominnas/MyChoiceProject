@@ -376,6 +376,9 @@ build/
 db.sqlite3
 /static/
 
+# Secrets
+MyChoiceProject/secrets.py
+
 # Node / React
 /frontend/node_modules/
 npm-debug.log*

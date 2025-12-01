@@ -1,0 +1,7 @@
+/* ItemList component styles */
+
+.item-list-container {
+  width: 100%;
+}
+
+/* Ensure inherited styles from App.css apply correctly */

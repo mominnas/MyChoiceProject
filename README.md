@@ -12,6 +12,8 @@ This repository contains a Django backend API and a simple React frontend.
 3.  Apply migrations and start the server:
     - `python manage.py migrate`
     - `python manage.py runserver`
+4.  Copy the secrets file and edit the secret tokens:
+    - `cp MyChoiceProject/secrets.example.py MyChoiceProject/secrets.py` Then edit secrets.py with your actual values
 
 The API is available at `http://localhost:8000/api/items/`
 
