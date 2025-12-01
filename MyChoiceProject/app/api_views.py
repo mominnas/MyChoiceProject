@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 
 
 class ItemViewSet(viewsets.ViewSet):
-    """Simple ViewSet implementing list, create, retrieve, partial_update"""
+    """Simple ViewSet implementing list, create, retrieve, partial_update, and destroy"""
 
     def list(self, request):
         items = Item.objects.all()
@@ -33,3 +33,8 @@ class ItemViewSet(viewsets.ViewSet):
             item = serializer.save()
             return Response(ItemSerializer(item).data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def destroy(self, request, pk=None):
+        item = get_object_or_404(Item, pk=pk)
+        item.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
