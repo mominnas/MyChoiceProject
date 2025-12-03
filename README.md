@@ -11,6 +11,7 @@ This repository contains a Django backend API and a simple React frontend.
     - `pip install -r requirements.txt`
 3.  Copy the secrets file and edit the secret tokens:
     - `cp MyChoiceProject/secrets.example.py MyChoiceProject/secrets.py`
+    - Run `python manage.py shell -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` to generate a secret key and paste it in the `secrets.py` file
 	- Then edit secrets.py with your actual values
 4.  Apply migrations and start the server:
     - `python manage.py migrate`
