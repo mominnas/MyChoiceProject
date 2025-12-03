@@ -27,6 +27,7 @@ The API is available at `http://localhost:8000/api/items/`
     - `npm run build`
 
 2.  Deploy the built frontend into Django static files and templates:
+    - `cd ../`
     - `python manage.py deploy_frontend`
     - `python manage.py collectstatic --noinput`
 
