@@ -9,6 +9,7 @@ This repository contains a Django backend API and a simple React frontend.
     - `python3 -m venv venv`
     - `venv\Scripts\activate`   (Windows) or `source venv/bin/activate` (macOS/Linux)
 2.  Install requirements:
+    - `cd MyChoiceProject`
     - `pip install -r requirements.txt`
 3.  Copy the secrets file and edit the secret tokens:
     - `cp MyChoiceProject/secrets.example.py MyChoiceProject/secrets.py`
