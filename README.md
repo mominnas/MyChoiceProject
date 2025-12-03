@@ -9,12 +9,13 @@ This repository contains a Django backend API and a simple React frontend.
     - `venv\Scripts\activate`   (Windows) or `source venv/bin/activate` (macOS/Linux)
 2.  Install requirements:
     - `pip install -r requirements.txt`
-3.  Apply migrations and start the server:
-    - `python manage.py migrate`
-    - `python manage.py runserver`
-4.  Copy the secrets file and edit the secret tokens:
+3.  Copy the secrets file and edit the secret tokens:
     - `cp MyChoiceProject/secrets.example.py MyChoiceProject/secrets.py`
 	- Then edit secrets.py with your actual values
+4.  Apply migrations and start the server:
+    - `python manage.py migrate`
+    - `python manage.py runserver`
+
 
 The API is available at `http://localhost:8000/api/items/`
 
